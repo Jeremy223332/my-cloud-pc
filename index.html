@@ -1,0 +1,86 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloud PC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="desktop">
+
+        <!-- Desktop icons -->
+        <div class="desktop-icon" onclick="openApp('files')">
+            📁
+            <span>Files</span>
+        </div>
+
+        <div class="desktop-icon" onclick="openApp('browser')">
+            🌐
+            <span>Browser</span>
+        </div>
+
+        <div class="desktop-icon" onclick="openApp('terminal')">
+            💻
+            <span>Terminal</span>
+        </div>
+
+        <div class="desktop-icon" onclick="openApp('settings')">
+            ⚙️
+            <span>Settings</span>
+        </div>
+
+        <!-- Bottom taskbar -->
+        <div class="taskbar">
+
+            <button class="start-button" onclick="toggleStartMenu()">
+                ☁️
+            </button>
+
+            <div class="taskbar-title">
+                My Cloud PC
+            </div>
+
+            <div class="clock" id="clock">
+                00:00
+            </div>
+
+        </div>
+
+        <!-- Start menu -->
+        <div class="start-menu" id="startMenu">
+
+            <h2>☁️ My Cloud PC</h2>
+
+            <button onclick="openApp('files')">📁 Files</button>
+            <button onclick="openApp('browser')">🌐 Browser</button>
+            <button onclick="openApp('terminal')">💻 Terminal</button>
+            <button onclick="openApp('settings')">⚙️ Settings</button>
+
+        </div>
+
+        <!-- App window -->
+        <div class="app-window" id="appWindow">
+
+            <div class="window-titlebar">
+                <span id="windowTitle">Cloud PC</span>
+
+                <button onclick="closeApp()">✕</button>
+            </div>
+
+            <div class="window-content" id="windowContent">
+                Welcome to your Cloud PC!
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
